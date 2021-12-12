@@ -1,6 +1,10 @@
 # gitlab-vagrant-executor
 Run vagrant libvirt vm as envs for gitlab jobs.
 
+## Consept
+
+Use https://docs.gitlab.com/runner/executors/custom.html for run libvirt kvm VMs use Vagrant as wrapper.
+
 ## Setup
 On runner host
 
@@ -33,6 +37,8 @@ and chose *custom*
 3. Copy bash scripts and Vagrantfile in */opt/vagrant-driver*
 
 4. kill -SIGHUP $(pidof gitlab-runner) or restart runner process.
+
+5. Install qemu, kvm, libvirt, Vagrant, etc...
 
 ## Use
 
