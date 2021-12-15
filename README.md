@@ -1,5 +1,5 @@
 # gitlab-vagrant-executor
-Run vagrant libvirt vm as envs for gitlab jobs.
+Run vagrant libvirt-kvm vms as envs for gitlab jobs.
 
 ## Concept
 
@@ -36,9 +36,11 @@ and chose *custom*
 
 3. Copy bash scripts and Vagrantfile in */opt/vagrant-driver*
 
-4. kill -SIGHUP $(pidof gitlab-runner) or restart runner process.
+4. *kill -SIGHUP $(pidof gitlab-runner)* or restart runner process.
 
 5. Install qemu, kvm, libvirt, Vagrant, etc...
+
+6. vagrant plugin install vagrant-libvirt
 
 ## Use
 
